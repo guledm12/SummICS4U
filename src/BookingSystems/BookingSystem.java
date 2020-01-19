@@ -4,15 +4,11 @@
  * and open the template in the editor.
  */
 package BookingSystems;
-import com.sun.istack.internal.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.JFrame;
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.logging.Level;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
