@@ -64,15 +64,15 @@ public class BookingSystem extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(51, 255, 255));
         setPreferredSize(new java.awt.Dimension(1050, 700));
         setSize(new java.awt.Dimension(1050, 700));
 
-        jPanel1.setBackground(new java.awt.Color(51, 102, 255));
-        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.setBackground(new java.awt.Color(51, 255, 255));
+        jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 102, 255), 3, true));
+        jPanel1.setForeground(new java.awt.Color(51, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Corbel", 1, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Trebuchet MS", 1, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(51, 51, 255));
         jLabel1.setText("Booking System");
         jLabel1.setToolTipText("");
 
@@ -93,8 +93,8 @@ public class BookingSystem extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(51, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jPanel3.setBackground(new java.awt.Color(51, 102, 255));
-        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel3.setBackground(new java.awt.Color(51, 255, 255));
+        jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 102, 255), 3, true));
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -121,19 +121,19 @@ public class BookingSystem extends javax.swing.JFrame {
         });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(51, 102, 255));
         jLabel2.setText("First Name:");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(51, 102, 255));
         jLabel3.setText("Middle Name:");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(51, 102, 255));
         jLabel4.setText("Last Name:");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel5.setForeground(new java.awt.Color(51, 102, 255));
         jLabel5.setText("Email Address:");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -183,43 +183,44 @@ public class BookingSystem extends javax.swing.JFrame {
                 .addGap(12, 12, 12))
         );
 
-        jPanel6.setBackground(new java.awt.Color(51, 102, 255));
-        jPanel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel6.setBackground(new java.awt.Color(51, 255, 255));
+        jPanel6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 102, 255), 3, true));
 
-        jButton3.setBackground(new java.awt.Color(51, 102, 255));
-        jButton3.setForeground(new java.awt.Color(51, 255, 255));
+        jButton3.setBackground(new java.awt.Color(51, 255, 255));
+        jButton3.setForeground(new java.awt.Color(51, 102, 255));
         jButton3.setText("Book");
-        jButton3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 255, 255), 3, true));
+        jButton3.setToolTipText("");
+        jButton3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 102, 255), 3, true));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
 
-        ResetBtn.setBackground(new java.awt.Color(51, 102, 255));
-        ResetBtn.setForeground(new java.awt.Color(51, 255, 255));
+        ResetBtn.setBackground(new java.awt.Color(51, 255, 255));
+        ResetBtn.setForeground(new java.awt.Color(51, 102, 255));
         ResetBtn.setText("Clear Table");
-        ResetBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 255, 255), 3, true));
+        ResetBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 102, 255), 3, true));
         ResetBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ResetBtnActionPerformed(evt);
             }
         });
 
-        ExitBtn.setBackground(new java.awt.Color(51, 102, 255));
-        ExitBtn.setForeground(new java.awt.Color(51, 255, 255));
+        ExitBtn.setBackground(new java.awt.Color(51, 255, 255));
+        ExitBtn.setForeground(new java.awt.Color(51, 102, 255));
         ExitBtn.setText("Exit");
-        ExitBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 255, 255), 3, true));
+        ExitBtn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 102, 255), 3, true));
         ExitBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ExitBtnActionPerformed(evt);
             }
         });
 
-        ExitBtn1.setBackground(new java.awt.Color(51, 102, 255));
-        ExitBtn1.setForeground(new java.awt.Color(51, 255, 255));
+        ExitBtn1.setBackground(new java.awt.Color(51, 255, 255));
+        ExitBtn1.setForeground(new java.awt.Color(51, 102, 255));
         ExitBtn1.setText("Clear row");
-        ExitBtn1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 255, 255), 3, true));
+        ExitBtn1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 102, 255), 3, true));
         ExitBtn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ExitBtn1ActionPerformed(evt);
@@ -268,8 +269,7 @@ public class BookingSystem extends javax.swing.JFrame {
             }
         ));
         jTable1.setSelectionBackground(new java.awt.Color(255, 255, 153));
-        jTable1.setSelectionForeground(new java.awt.Color(0, 0, 0));
-        jTable1.setSurrendersFocusOnKeystroke(true);
+        jTable1.setSelectionForeground(new java.awt.Color(0, 0, 204));
         jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTable1MouseClicked(evt);
@@ -290,26 +290,26 @@ public class BookingSystem extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        jPanel8.setBackground(new java.awt.Color(51, 102, 255));
-        jPanel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel8.setBackground(new java.awt.Color(51, 255, 255));
+        jPanel8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 102, 255), 3, true));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel6.setForeground(new java.awt.Color(51, 102, 255));
         jLabel6.setText("Date:");
 
         jSpinner3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jSpinner3.setModel(new javax.swing.SpinnerDateModel());
 
-        jLabel8.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel8.setForeground(new java.awt.Color(51, 102, 255));
         jLabel8.setText("Month");
 
-        jLabel9.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel9.setForeground(new java.awt.Color(51, 102, 255));
         jLabel9.setText("Day");
 
-        jLabel10.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel10.setForeground(new java.awt.Color(51, 102, 255));
         jLabel10.setText("Year");
 
-        jLabel11.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel11.setForeground(new java.awt.Color(51, 102, 255));
         jLabel11.setText("Time");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
@@ -318,7 +318,7 @@ public class BookingSystem extends javax.swing.JFrame {
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
                 .addGap(59, 59, 59)
-                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
+                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel8Layout.createSequentialGroup()
