@@ -10,15 +10,13 @@ import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.io.BufferedWriter;
 import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.TableModel;
 import javax.swing.table.DefaultTableModel;
-/**
- *
- * @author Elamine
- */
+
 public class BookingSystem extends javax.swing.JFrame {
 
     /**
@@ -412,24 +410,25 @@ public class BookingSystem extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
+        // Takes in first name of user.
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
+        // Takes in middle name of user.
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
+        // Takes in last name of user.:
     }//GEN-LAST:event_jTextField3ActionPerformed
 
     private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
-        // TODO add your handsdfsdfsfling code here:
+        // Takes in email address of user.
     }//GEN-LAST:event_jTextField4ActionPerformed
 private JFrame frame;
     private void ExitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitBtnActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
+            //System.exit(0);
+
         
        
     }//GEN-LAST:event_ExitBtnActionPerformed
@@ -437,23 +436,20 @@ private JFrame frame;
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        //model.addRow(new Object[]{jTextField2.isSelected(),jTextField3.isSelected(),kTextField4isSelected()});
+        //Takes in user-filled form and books an appointment, with info listed below on table.
         model.addRow(new Object[]{jTextField1.getText(),jTextField2.getText(), jTextField3.getText(),jTextField4.getText(),jSpinner3.getValue()});
         JOptionPane.showMessageDialog(null,"The appointment has been booked!");
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void ResetBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ResetBtnActionPerformed
-        // TODO add your handling code here
+        // Sets up the table that will have all booking appointments.
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         model.setRowCount(0);
         jTextField1.setText("");
         jTextField2.setText("");
         jTextField3.setText("");
         jTextField4.setText("");
-        
-        
-        
-
+ 
     }//GEN-LAST:event_ResetBtnActionPerformed
 
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
@@ -461,7 +457,7 @@ private JFrame frame;
     }//GEN-LAST:event_jTable1MouseClicked
 
     private void ExitBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitBtn1ActionPerformed
-        // TODO add your handling code here:
+        // Allows user to select already-booked appointment in order to delete.
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         int SelectedRowIndex = jTable1.getSelectedRow();
         model.removeRow(SelectedRowIndex);
