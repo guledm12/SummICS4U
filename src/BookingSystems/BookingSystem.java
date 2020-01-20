@@ -427,7 +427,7 @@ public class BookingSystem extends javax.swing.JFrame {
 private JFrame frame;
     private void ExitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitBtnActionPerformed
         // TODO add your handling code here:
-            //System.exit(0);
+            System.exit(0);
 
         
        
